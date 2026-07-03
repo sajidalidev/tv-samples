@@ -72,7 +72,6 @@ fun VideoPlayerScreen(
 ) {
     val uiState by videoPlayerScreenViewModel.uiState.collectAsStateWithLifecycle()
 
-    // TODO: Handle Loading & Error states
     when (val s = uiState) {
         is VideoPlayerScreenUiState.Loading -> {
             Loading(modifier = Modifier.fillMaxSize())
